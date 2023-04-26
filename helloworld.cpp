@@ -3,23 +3,20 @@
 
 using namespace std;
 
-int main(){
-    
-    int number = 10;
-    int guess;
-    int count = 0;
+int power (int baseNum, int powNum){
+    int result = 1;
 
-    while (number != guess && count < 3){
-        cout << "enter guess: ";
-        cin >> guess;
-        count++;
+    for (int i = 0; i < powNum; i++){
+        result = result * baseNum;
     }
 
-    if (count > 2){ 
-        cout << "you lose";
-        }
-        else{
-        cout << "you win";
-        }
+
+    return result;
+
+}
+
+int main(){
+    
+    cout << power (3,3);
     return 0;
     }
