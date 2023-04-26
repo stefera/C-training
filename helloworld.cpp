@@ -3,22 +3,22 @@
 
 using namespace std;
 
-
+class Book {
+public:
+    string topic;
+    string author;
+    string title;
+    int pages;
+};
 
 int main(){
     
-        int numberGrid[2][2] = {
-                                {1,2},
-                                {3,4}
-        };
-        // cout << numberGrid[0][1];
+    Book book1;
+    book1.title = "Harry Potter";
+    book1.author = "J.K.Rowling";
+    book1.pages = 500; 
 
-for (int i = 0; i < 2; i++){
-    for (int a = 0; a < 2; a++){
-        cout << numberGrid[i][a];
-    }
-    cout << endl;
-}
+    cout << book1.title;
 
     return 0;
     }
