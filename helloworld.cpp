@@ -9,14 +9,19 @@ public:
     string author;
     string title;
     int pages;
+    bool pagesUndOv(){
+       if (pages>100){
+          return true;
+          }
+          return false;
+          };
 };
 
 int main(){
     
     Book book1;
-    book1.title = "Harry Potter";
-    book1.author = "J.K.Rowling";
-    book1.pages = 500; 
+    
+    cout <<  book1.pagesUndOv();
 
     cout << book1.title;
 
